@@ -30,7 +30,7 @@ var i, len, htmlStr;
 len = fileList.length;
 if(len > 0) {htmlStr = "<p>Results:</p><ol>";
 for( i = 0, len; i < len; i += 1) {
-htmlStr += '<li><a href="file:/' + fileList[i].fullPath + '">' + fileList[i].name + '</a></li>';}
+htmlStr += '<li><a href="file:/' + fileList[i].fullPath + '">' + fileList[i].fullPath + '</a></li>';}
 htmlStr += "</ol>";
 res.innerHTML = htmlStr;
 			}
